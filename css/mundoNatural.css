@@ -1,0 +1,171 @@
+/*Propiedades personalizadas - custom properties*/
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+
+
+    --formulario: #d5ada8; 
+    --menu: #77763E;
+    --letraCafeClara: #8B6C5C;
+    --LetraVerde: #92864c;
+    --letraOscura: #321F19;
+    --letraClara: #FFF1E6;
+    --fondoMenu: #BDB07C;
+    --letraMenu: #ffebeb;
+    --fondoClaro: #DBC5AE;
+    --fondoOscuro: #1a1615 ;
+    --fortalezas: #f8decd;
+    --boton:#F1948A ;
+}
+  /*-------------------MENU--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:var(--menu);
+    width: 100%;
+    position:fixed;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+}
+
+nav a {
+    font-family:'Poppins';
+    font-weight: lighter;
+    font-size: 150;
+    word-spacing: 0%;
+    list-style-type:none;
+    text-decoration: none;
+    padding: 1em 2rem;
+    overflow:hidden;
+    opacity: 0.9;
+    float:right;
+    color:var(--letraMenu);
+}
+
+nav a:hover {
+    background-color: var(--fondoMenu);
+}
+
+/* --------------- MUNDO NATURAL --------------- */
+.MundoNatural {
+    background-color: var(--fondoClaro);
+    min-height: 80vh;
+    padding: 70px;    
+    align-content:space-between;
+    color: var(--oscuro);
+}
+
+.MundoNatural h1 {
+    font-family:'Libre Baskerville', sans-serif ;
+    font-weight: 300;
+    font-variant-ligatures: normal;
+    font-size: 3rem;
+    color: var(--letraOscura);
+    letter-spacing:2px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.columna-cards{
+    column-count: 3;
+    column-gap: 30px;
+}
+
+.card {
+    background-color: white;
+    width: 250px;
+    border: 1px solid #bdbcbc;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.card img {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.card-content {
+    padding: 10px;
+}
+
+.card-content h2 {
+    font-family:'Libre Baskerville', sans-serif ;
+    font-style: italic;
+    font-weight: 300;
+    font-variant-ligatures: normal;
+    font-size: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--LetraVerde);
+}
+
+.card-content p {
+    font-family: 'Poppins';
+    font-weight: 390;
+    font-variant-ligatures: normal;
+    font-optical-sizing: auto;
+    font-size: 80%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--letraOscura);
+}
+  
+/*-----------LUGARES PARA VISITAR------------*/
+.Viaje {
+    background-color: var(--fondoOscuro);
+    min-height: 80vh;
+    padding: 70px;    
+    align-content:space-between;
+    color: var(--oscuro);
+}
+
+h1 {
+    font-family:'Libre Baskerville', sans-serif ;
+    font-weight: 300;
+    font-variant-ligatures: normal;
+    font-size: 3rem;
+    color: var(--letraClara);
+    letter-spacing:2px;
+    text-align: center;
+    padding: 1rem;
+}
+
+table {
+    background-color: var(--fondoClaro);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 3px solid var(--letraCafeClara);
+}
+
+table td {
+    font-family:'Libre Baskerville', sans-serif ;
+    font-style: italic;
+    font-weight: 300;
+    font-variant-ligatures: normal;
+    font-size: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--LetraVerde);
+    padding: 20px;
+}
+
+table img {
+    width: 250px;
+    height: 200px;
+}

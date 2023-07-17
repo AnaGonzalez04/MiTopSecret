@@ -1,0 +1,246 @@
+/*Propiedades personalizadas - custom properties*/
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+
+    --flechas: #3c376f;
+    --formulario: #d5ada8; 
+    --menu: #77763E;
+    --letraCafeClara: #8B6C5C;
+    --LetraVerde: #92864c;
+    --letraOscura: #321F19;
+    --letraClara: #FFF1E6;
+    --fondoMenu: #BDB07C;
+    --letraMenu: #ffebeb;
+    --fondoClaro: #DBC5AE;
+    --fondoOscuro: #1a1615 ;
+    --fortalezas: #f8decd;
+    --boton:#F1948A ;
+}
+  /*-------------------MENU--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color:var(--menu);
+    width: 100%;
+    position:fixed;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+}
+
+nav a {
+    font-family:'Poppins';
+    font-weight: lighter;
+    font-size: 150;
+    word-spacing: 0%;
+    list-style-type:none;
+    text-decoration: none;
+    padding: 1em 2rem;
+    overflow:hidden;
+    opacity: 0.9;
+    float:right;
+    color:var(--letraMenu);
+}
+
+nav a:hover {
+    background-color: var(--fondoMenu);
+}
+
+/* ---------------- EN CASA ------------------*/
+h1 {
+    font-family:'Libre Baskerville', sans-serif ;
+    font-weight: 300;
+    font-variant-ligatures: normal;
+    font-size: 3rem;
+    color: var(--letraOscura);
+    letter-spacing:2px;
+    text-align: center;
+    padding: 1rem;
+}
+
+h2 {
+    font-family:'Libre Baskerville', sans-serif ;
+    font-style: italic;
+    font-weight: 300;
+    font-variant-ligatures: normal;
+    font-size: 170%;
+    letter-spacing: 2px;
+    text-align: center;
+    color: var(--LetraVerde);
+}
+
+p{
+    font-family: 'Poppins';
+    font-weight: 390;
+    font-variant-ligatures: normal;
+    font-optical-sizing: auto;
+    font-size: 125%;
+    letter-spacing: 1px;
+    text-align: center;
+    color: var(--letraOscura);
+}
+
+.section1 {
+    background-color: var(--fondoClaro);
+    min-height: 50vh;
+    padding: 70px;    
+}
+
+.bebida img {
+    object-fit: contain;
+    display:grid;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.section2 {
+    background-color: var(--fondoOscuro);
+    min-height: 50vh;
+    padding: 80px; 
+    text-align: center; 
+    margin-top: -5px;  
+}
+
+.section2 h1 {
+    font-family:'Libre Baskerville', sans-serif ;
+    font-weight: 300;
+    font-variant-ligatures: normal;
+    font-size: 3rem;
+    color: var(--letraClara);
+    letter-spacing:2px;
+    padding: 1rem;
+}
+
+.section2 h2 {
+    font-family:'Libre Baskerville', sans-serif ;
+    font-style: italic;
+    font-weight: 200;
+    font-variant-ligatures: normal;
+    font-size: 130%;
+    letter-spacing: 3px;
+    color: var(--LetraVerde);
+}
+
+.section3 {
+    background-color: var(--fondoClaro);
+    min-height: 50vh;
+    padding: 100px; 
+    margin: 0;   
+}
+
+.section3 img {
+    object-fit: contain;
+    display:grid;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.formulario {
+    text-align: center;
+}
+
+#formulario input[type="text"],
+#formulario textarea {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+#formulario input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    width: 95%;
+    border: 15px;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.formulario {
+    height: 300px;
+    width: 500px;
+    position: relative;
+}
+
+.signup {
+    position: absolute;
+    top: 5%;
+    left: 23rem;
+    width: 70%;
+}
+
+.signup h2{
+    font-family:'Libre Baskerville', sans-serif ;
+    font-style: italic;
+    font-weight: 300;
+    font-variant-ligatures: normal;
+    font-size: 150%;
+    color: var(--letraCafeClara);
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.slide-up .form-title span {
+    margin-right: 5px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.form-holder {
+    border-radius: 80px;
+    margin-top: 10px;
+    opacity: 1;
+    visibility: visible;
+    border:none;
+}
+
+.form-holder input {
+    font-family:'Libre Baskerville', sans-serif;
+    line-height: 10px;
+    padding: 10px 15px;
+    border-bottom: 2.5px solid #ffffff;
+    font-size: 12px;
+    border:none;
+}
+
+textarea{
+    font-family:'Libre Baskerville', sans-serif ;
+    line-height: 30px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 12px;
+    border:none;
+    width: 330px;
+}
+    
+.submit-btn {
+    background-color: var(--LetraVerde);
+    color:var(--blanco);
+    border-radius: 30px;
+    display: block;
+    margin: 15px auto; 
+    padding: 15px 45px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 5;
+    visibility: visible;
+    border:none;
+    text-align: center;
+}

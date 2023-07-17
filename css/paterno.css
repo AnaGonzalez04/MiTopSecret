@@ -1,0 +1,514 @@
+/*Propiedades personalizadas - custom properties*/
+:root {
+  --blanco: #ffffff;
+  --oscuro: #212121;
+  --primario: #FFC107;
+  --secundario: #0097A7;
+  --gris: #757575;
+  --grisClaro: #DFE9F3;
+  --formulario: #d5ada8; 
+  --menu: #d8857c;
+  --fondoClaro: #FBEEE6;
+  --fondoRojo: #f4bdb5;
+  --fortalezas: #f8decd;
+  --boton:#F1948A ;
+}
+
+/*-------------------MENU--------------------*/
+header {
+    background-color:var(--menu);
+    width: 100%;
+    position:fixed;
+    z-index: 100;
+}
+nav {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content:flex-end;
+  align-items:last baseline;
+  margin-bottom:auto;
+}
+
+nav ul {
+  list-style-type:none;
+  margin:0%;
+  padding: 10px;
+  overflow:hidden;
+  border: 0;
+  font-size: 15px;
+  letter-spacing: 2px;
+  opacity: 0.9;
+}
+
+nav li {
+  float:left;
+}
+
+nav a {
+  display: inline-flexbox;
+  color:#ffebeb;
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  float: right;
+  border-color: transparent;
+}
+
+nav a:hover {
+  background-color:#ef9c9cd0;
+  text-decoration: none;
+}
+
+/*---------------- SECTION 1 ------------------*/
+.section1 {
+  background-color: var(--fondoClaro);
+  min-height: 60vh;
+  padding: 100px;    
+  align-content:space-between;
+}
+
+.fondo{
+  text-align: center;
+  color: var(--oscuro);
+  padding: 2rem;
+}
+
+.columna-inicio{
+  width: 50%;
+  float: left;
+}
+
+.fotoPrincipal {
+  text-align: center;
+  object-fit: cover;
+  border-radius: 150px;
+  width: 300px;
+  height: 300px;
+}
+
+.centrar-imagen {
+  display:grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*---------------- SECTION 2 ------------------*/
+.section2 {
+  background-color: var(--fondoRojo);
+  min-height: 70vh;
+  padding: 50px;    
+  align-content:space-between;
+  color: var(--oscuro);
+  padding: 2rem;
+}
+
+.columna-S2{
+  width: 50%;
+  float: left;
+}
+
+.columna-S2-2{
+  background-color: var(--fortalezas);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:small;
+  letter-spacing: 2px;
+  float:left;
+  white-space:normal;
+  box-shadow: 10px 10px #FBEEE6;
+  /*margin: 75em 10rem;*/
+
+}
+
+.columna-S2-2 ul li{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size:small;
+  letter-spacing: 2px;
+}
+
+.fotoFortalezas {
+  object-fit: cover;
+  display:block;
+  width: 600px;
+  margin-top: -8rem;
+  height: 40rem;
+}
+
+/*---------------- SECTION 3 ------------------*/
+.section3 {
+  background-color: var(--fondoClaro);
+  min-height: 55vh;
+  padding: 60px;    
+  align-content:space-between;
+  color: var(--oscuro);
+  padding: 2rem;
+}
+
+.fotoPasion {
+  object-fit: cover;
+  display:grid;
+  width: 400px;
+  height: 250px;
+  padding: 20px;
+}
+
+
+/*---------------- SECTION 4 ------------------*/
+.section4 {
+  background-color: var(--fondoRojo);
+  min-height: 85vh;
+  padding: 60px;    
+  align-content:space-between;
+  color: var(--oscuro);
+  padding: 2rem;
+}
+
+.fotoPasatiempo {
+  object-fit: cover;
+  display:grid;
+  width: 600px;
+  height: 400px;
+}
+
+.columna-pasatiempo{
+  width: 50%;
+  float: left;
+}
+
+.centrar-imagen {
+  display:grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*---------------- SECTION CONTACTO ------------------*/
+.contacto {
+  background-color: var(--fondoClaro);
+  min-height: 55vh;
+  padding: 50px;    
+  align-content:space-between;
+  color: var(--oscuro);
+  padding: 2em;
+}
+
+.formulario {
+  background-color: var(--formulario);
+  width: min( 60rem, 100% );
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+input {
+  width: 95%;
+  border: 15px;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+textarea {
+  width: 95%;
+  border: none;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.row {
+  text-align: center;
+}
+
+button {
+  background-color:var(--boton);
+  border:none;
+  border-radius:50px;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*----------------- Globales ---------------*/
+h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+h2{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-style:normal;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+
+/* -------------- Footer --------------------*/
+footer{
+  background-color: var(--fondoRojo);
+  text-align: center;
+  min-height: 10vh;
+}
+
+footer p small{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: medium;
+}
+
+/* ---------------- ANIMALES ---------------- */
+.AvePrincipal {
+  background-color: var(--fondoClaro);
+  min-height: 80vh;
+  padding: 70px;    
+  align-content:space-between;
+  color: var(--oscuro);
+}
+
+.columna-animales{
+  width: 50%;
+  float: left;
+}
+
+.fotoAguila {
+  object-fit: cover;
+  display:grid;
+  width: 500px;
+  height: 250px;
+}
+
+.AveSecundaria {
+  background-color: var(--fondoRojo);
+  min-height: 80vh;
+  padding: 70px;    
+  color: var(--oscuro);
+}
+
+.fotoPajaro {
+  object-fit:contain;
+  align-content: center;
+  display:grid;
+  width: 300px;
+  height: 300px;
+}
+
+.Mamifero {
+  background-color: var(--fondoClaro);
+  min-height: 80vh;
+  padding: 70px;    
+  align-content:space-between;
+  color: var(--oscuro);
+}
+
+.fotoMamifero {
+  align-content: center;
+  display:grid;
+  width: 500px;
+  height: 300px;
+}
+
+
+/* --------------- MUNDO NATURAL --------------- */
+.MundoNatural {
+  background-color: var(--fondoClaro);
+  min-height: 80vh;
+  padding: 70px;    
+  align-content:space-between;
+  color: var(--oscuro);
+}
+
+.columna-cards{
+  column-count: 3;
+  column-gap: 30px;
+}
+
+.card {
+  background-color: white;
+  width: 250px;
+  border: 1px solid #bdbcbc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+  
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card-content {
+  padding: 10px;
+}
+
+.card-content h2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+}
+
+  /*-----------LUGARES PARA VISITAR------------*/
+  .Viaje {
+    background-color: var(--fondoRojo);
+    min-height: 80vh;
+    padding: 70px;    
+    align-content:space-between;
+    color: var(--oscuro);
+  }
+  
+  table {
+    background-color: var(--fondoClaro);
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  tr {
+    border-bottom: 5px solid #cfacac;
+  }
+
+  table td {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  table img {
+    width: 250px;
+    height: 200px;
+  }
+
+  /* ----------- QUEDATE EN CASA ------------- */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+
+  #bebida {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #lectura {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #musica {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #formulario {
+    text-align: center;
+  }
+
+  #formulario input[type="text"],
+  #formulario textarea {
+    width: 300px;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+
+  #formulario input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+/* ----------------- OLVIDO ---------------- */
+.olvido1 {
+  background-color: var(--fondoClaro);
+  min-height: 80vh;
+  padding: 70px;    
+  align-content:space-between;
+  color: var(--oscuro);
+}
+
+.columna-fotos{
+  column-count: 3;
+  column-gap: 30px;
+}
+
+.slider-container {
+  display: flex;
+  width: 80%;
+  height: 50vh;
+  overflow-x: scroll;
+  scroll-snap-type:mandatory;
+  scroll-snap-align: center;
+}
+
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+
+/*-----------ESTILO------------*/
+.estilo1 {
+  background-color: var(--fondoClaro);
+  min-height: 80vh;
+  padding: 70px;    
+  align-content:space-between;
+  color: var(--oscuro);
+}
+
+.columna-estilo{
+  column-count: 3;
+  column-gap: 0px;
+}
+  
+.estilo2 {
+  background-color: var(--fondoRojo);
+  min-height: 80vh;
+  padding: 70px;    
+  align-content:space-between;
+  color: var(--oscuro);
+}
+
+.estiloFoto{
+  align-content: center;
+  display:grid;
+  width: 350px;
+  height: 500px;
+}
+
+tr {
+  border-bottom: 5px solid #cfacac;
+}
+
+table td {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+}
+
+table img {
+  width: 250px;
+  height: 200px;
+}

@@ -1,0 +1,114 @@
+/*Propiedades personalizadas - custom properties*/
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+    --grisClaro: #DFE9F3;
+
+    --flechas: #3c376f;
+    --formulario: #d5ada8; 
+    --menu: #77763E;
+    --letraCafeClara: #8B6C5C;
+    --LetraVerde: #92864c;
+    --letraOscura: #321F19;
+    --letraClara: #FFF1E6;
+    --fondoMenu: #BDB07C;
+    --letraMenu: #ffebeb;
+    --fondoClaro: #DBC5AE;
+    --fondoOscuro: #1a1615 ;
+    --fortalezas: #f8decd;
+    --boton:#F1948A ;
+}
+  /*-------------------MENU--------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box
+}
+header {
+    background-color:var(--menu);
+    width: 100%;
+    position:fixed;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content:flex-start;
+}
+
+nav a {
+    font-family:'Poppins';
+    font-weight: lighter;
+    font-size: 150;
+    word-spacing: 0%;
+    list-style-type:none;
+    text-decoration: none;
+    padding: 1em 2rem;
+    overflow:hidden;
+    opacity: 0.9;
+    float:right;
+    color:var(--letraMenu);
+}
+
+nav a:hover {
+    background-color: var(--fondoMenu);
+}
+
+/*-----------ESTILO------------*/
+.estilo1 {
+    background-color: var(--fondoClaro);
+    min-height: 80vh;
+    padding: 70px;    
+    align-content:space-between;
+    color: var(--oscuro);
+  }
+
+  h1 {
+    font-family:'Libre Baskerville', sans-serif ;
+    font-weight: 300;
+    font-variant-ligatures: normal;
+    font-size: 3rem;
+    color: var(--letraCafeClara);
+    letter-spacing:2px;
+    text-align: center;
+    padding: 1rem;
+}
+  
+  .columna-estilo{
+    column-count: 3;
+    column-gap: 0px;
+  }
+    
+  .estilo2 {
+    background-color: var(--fondoOscuro);
+    min-height: 80vh;
+    padding: 70px;    
+    align-content:space-between;
+    color: var(--oscuro);
+  }
+  
+  .estiloFoto{
+    align-content: center;
+    display:grid;
+    width: 350px;
+    height: 500px;
+  }
+  
+  tr {
+    border-bottom: 5px solid #cfacac;
+  }
+  
+  table td {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+  table img {
+    width: 250px;
+    height: 200px;
+  }
